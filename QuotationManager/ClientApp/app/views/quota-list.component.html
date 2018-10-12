@@ -1,0 +1,11 @@
+﻿<div>
+    <a routerLink="/create" class="nav-link">Добавить</a>
+</div>
+<table class="table table-striped">
+    <tbody>
+    <tr *ngFor="let q of quotas">
+        <td><a [routerLink]="['quota', q.id]" class="nav-link">{{q?.refinancingAmount}} рублей под {{q?.interestRate}} процентов</a></td>
+        <td><button class="btn btn-sm btn-danger" (click)="delete(q.id)">Удалить</button></td>
+    </tr>
+    </tbody>
+</table>

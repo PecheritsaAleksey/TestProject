@@ -1,0 +1,16 @@
+﻿<div *ngIf="loaded">
+    <h2>Квота {{quota.id}}</h2>
+    <div>
+        <p><b>Город:</b> {{quota.cityId}}</p>
+        <p><b>Цель:</b> {{quota.purposeId}}</p>
+        <p><b>Сумма рефинансирования:</b> {{quota.refinancingAmount}}</p>
+        <p><b>Комментарий:</b> {{quota.comment}}</p>
+        <p><b>Процентная ставка:</b> {{quota.interestRate}}</p>
+        <p>Взносы:</p>
+        <ul>
+            <li *ngFor="let q of quota.quotaContributions">{{q.value}} рублей</li>
+        </ul>
+        <p><a routerLink="/" class="nav-link">К списку</a></p>
+        <p><a routerLink="/edit/{{quota.id}}" class="nav-link">Редактировать</a></p>
+    </div>
+</div>

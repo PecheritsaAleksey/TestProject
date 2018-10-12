@@ -1,0 +1,24 @@
+﻿<div class="form-group">
+    <label>Город</label>
+    <select #city [(ngModel)]="quota.cityId">
+        <option *ngFor="let c of cities" [value]="c.id">{{c.name}}</option>
+    </select>
+</div>
+<div class="form-group">
+    <label>Цель</label>
+    <select #purpose [(ngModel)]="quota.purposeId">
+        <option *ngFor="let p of purposes" [value]="p.id">{{p.name}}</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label>Сумма рефинансирования</label>
+    <input type="number" [(ngModel)]="quota.refinancingAmount" class="form-control" />
+</div>
+<div class="form-group">
+    <label>Комментарий</label>
+    <input type="text" [(ngModel)]="quota.comment" class="form-control" />
+</div>
+<div class="form-group">
+    <label>Процентная ставка будет расчитана после создания</label>
+</div>

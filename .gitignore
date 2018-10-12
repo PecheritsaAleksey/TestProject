@@ -1,0 +1,13 @@
+.vs/
+*.sln
+*.user
+*.csproj
+QuotationManager/bin/
+QuotationManager/ClientApp/app/*.js
+QuotationManager/ClientApp/app/*.map
+QuotationManager/node_modules/
+QuotationManager/obj/
+QuotationManager/Properties/
+XUnitTestProject/bin/
+XUnitTestProject/obj/
+QuotationManager/wwwroot/dist/*.js
