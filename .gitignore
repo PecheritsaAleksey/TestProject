@@ -1,7 +1,6 @@
 .vs/
 *.sln
 *.user
-*.csproj
 QuotationManager/bin/
 QuotationManager/ClientApp/app/*.js
 QuotationManager/ClientApp/app/*.map
